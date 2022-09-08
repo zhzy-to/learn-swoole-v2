@@ -1,0 +1,16 @@
+{
+    "name": "zhzy/swow",
+    "description": "swoole demo",
+    "autoload": {
+        "psr-4": {
+            "Zhzy\\Swow\\": "src/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zhzy"
+        }
+    ],
+    "require": {}
+}

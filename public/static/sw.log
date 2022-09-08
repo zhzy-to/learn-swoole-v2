@@ -1,0 +1,17 @@
+[2022-09-07 11:25:39 *1927.3]	ERROR	php_swoole_server_rshutdown() (ERRNO 503): Fatal error: Uncaught Error: Class 'http\Exception\RuntimeException' not found in /var/www/src/lib/route/Route.php:80
+Stack trace:
+#0 /var/www/src/lib/route/Router.php(121): Zhzy\Swow\lib\route\Route->run(Object(Swoole\Http\Request), Object(Swoole\Http\Response), Object(Swoole\WebSocket\Server))
+#1 /var/www/src/lib/route/Router.php(109): Zhzy\Swow\lib\route\Router->runRoute(Object(Swoole\Http\Request), Object(Swoole\Http\Response), Object(Swoole\WebSocket\Server), Object(Zhzy\Swow\lib\route\Route))
+#2 /var/www/src/lib/route/Router.php(97): Zhzy\Swow\lib\route\Router->dispatchToRoute(Object(Swoole\Http\Request), Object(Swoole\Http\Response), Object(Swoole\WebSocket\Server))
+#3 /var/www/src/Server/WsServer.php(166): Zhzy\Swow\lib\route\Router->dispatch(Object(Swoole\Http\Request), Object(Swoole\Http\Response), Object(Swoole\WebSocket\Server))
+#4 {main}
+  thrown in /var/www/src/lib/route/Route.php on line 80
+[2022-09-07 11:25:39 $1918.0]	WARNING	Server::check_worker_exit_status(): worker(pid=1927, id=3) abnormal exit, status=255, signal=0
+[2022-09-07 11:30:42 *1950.3]	ERROR	php_swoole_server_rshutdown() (ERRNO 503): Fatal error: Uncaught ArgumentCountError: Too few arguments to function App\Http\Controllers\Index::index(), 0 passed in /var/www/src/lib/route/Route.php on line 78 and exactly 3 expected in /var/www/app/Http/Controllers/Index.php:12
+Stack trace:
+#0 /var/www/src/lib/route/Route.php(78): App\Http\Controllers\Index->index()
+#1 /var/www/src/lib/route/Router.php(121): Zhzy\Swow\lib\route\Route->run(Object(Swoole\Http\Request), Object(Swoole\Http\Response), Object(Swoole\WebSocket\Server))
+#2 /var/www/src/lib/route/Router.php(109): Zhzy\Swow\lib\route\Router->runRoute(Object(Swoole\Http\Request), Object(Swoole\Http\Response), Object(Swoole\WebSocket\Server), Object(Zhzy\Swow\lib\route\Route))
+#3 /var/www/src/lib/route/Router.php(97): Zhzy\Swow\lib\route\Router->dispatchToRoute(Object(Swoole\Http\Request), Object(Swoole\Http\Response), Object(Swoole\WebSocket\Server))
+#4 /var/www/src/Server/WsServer.php(166): Zhzy\Swow\lib\route\Router->dispatch(Object(Swoole\Http\Request), Object(Swoole\Http\Response), Object(Swoole\WebSocket\ in /var/www/app/Http/Controllers/Index.php on line 12
+[2022-09-07 11:30:42 $1941.0]	WARNING	Server::check_worker_exit_status(): worker(pid=1950, id=3) abnormal exit, status=255, signal=0
